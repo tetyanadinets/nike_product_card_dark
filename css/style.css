@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'museo_sans100';
+    src: url('../fonts/museo-sans-100-webfont.woff2') format('woff2'),
+         url('../fonts/museo-sans-100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button,
+.ba-card_slider,
+.ba-add{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+
+body{
+	background-image: url(../img/main_bg.png);
+	background-repeat: no-repeat;
+	font-family: 'museo_sans100', sans-serif;
+
+}
+.ba-card{
+	max-width: 700px;
+	background-color: #111a28;
+	-webkit-border-radius: 15px;
+	        border-radius: 15px;
+	margin: 110px auto;
+}
+
+/*Logo*/
+.ba-card__logo img{
+	width: 67px;
+	height: 39px;
+	margin-top: 25px;
+}
+
+
+/*Photo*/
+.ba-photos{
+	padding-right: 20px;
+}
+
+.ba-card__item{
+	padding: 60px 15px;
+}
+
+.ba-slider{
+	margin-bottom: 20px;
+}
+
+.ba-card_slider{
+	min-width: 15px;
+	min-height: 15px;
+	display: inline-block;
+	margin-left: 4px;
+}
+.ba-slider .ba-card_slider span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.ba-slider .ba-card-active span, .ba-card_slider:hover span{
+	background-color: #1F273F;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #7b8088;
+}
+.ba-card__slider--card2 span{
+	background-color: #FFF;
+}
+.ba-card__slider--card3 span{
+	background-color: #ED3333;
+}
+.ba-card__slider--card4 span{
+	background-color: #29E3EA;
+}
+
+/*Model info*/
+.ba-card-model-info{
+	padding-right: 20px;
+}
+.ba-card-model__name{
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #E1E1E1;
+	margin-top: 18px;
+}
+.ba-card-model__type{
+	color: #E1E1E1;
+	font-size: 14px;
+	margin-top: 13px;
+}
+
+.ba-rating {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	margin: 20px 0;
+}
+
+.ba-rating:before {
+	content: "★★★★★";
+	color: #9da1a6;
+}
+.ba-rating__highlight{
+	width: 100%;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+.ba-rating__highlight:before{
+	content: "★★★★★";
+	color: #f7bf16;
+}
+
+
+/*form*/
+.ba-select{
+	width: 70px;
+	height: 30px;
+	font-size: 14px;
+	background-color: transparent;
+	color: #4F5560;
+	border: 1px solid #4F5560;
+	cursor: pointer;
+	outline: none;
+	 -webkit-appearance: none;
+	background: url(../img/Rectangle2.png) no-repeat 85% 50%;
+	-webkit-background-size: 13px 8px;
+	     -o-background-size: 13px 8px;
+	        background-size: 13px 8px;
+	padding: 5px 10px;
+	padding-right: 20px;
+}
+.ba-select:hover{
+	border-color: white;
+}
+.ba-add{
+	display: inline-block;
+	margin-top: 30px;
+	background-color: #202835;
+	color: #4F5560;
+	border: 1px solid #4F5560;
+	padding: 10px 55px;
+	font-size: 14px;
+	cursor: pointer;
+	outline: none;
+}
+.ba-add:hover{
+ 	border-color: white;
+ 	color: #FFF;
+}

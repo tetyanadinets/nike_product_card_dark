@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nike Product Card</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/museo-sans-100-webfont.woff">
+	<link rel="stylesheet" type="text/css" href="fonts/museo-sans-100-webfont.woff2">
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<main>
+			<section class="ba-card ba-row">
+				<a href="#" class="ba-card__logo ba-width-1">
+					<img src="img/logo.png" alt="NikeLogo">
+				</a>
+				<div class="ba-photos ba-width-3-5">
+					<div class="ba-card__item">
+						<img src="img/Nike-SB-Stefan-Janoski-Max.png" alt="Nike">
+					</div>
+					<ul class="ba-slider ba-text-center">
+						<li class="ba-card_slider ba-card__slider--card1 ba-card-active"><span></span></li>
+						<li class="ba-card_slider ba-card__slider--card2"><span></span></li>
+						<li class="ba-card_slider ba-card__slider--card3"><span></span></li>
+						<li class="ba-card_slider ba-card__slider--card4"><span></span></li>
+					</ul>
+				</div>
+
+				<div class="ba-card-model-info ba-width-2-5">
+					<h2 class="ba-card-model__name ba-text-left">Nike SB Stefan Janoski Max
+					</h2>
+					<p class="ba-card-model__type">Unisex Skateboarding Shoe</p>
+					<span class="ba-rating ba-rating--card">
+						<span class="ba-rating__highlight" style ="width:80%;"></span>
+					</span>
+
+						<form>
+							<div class="ba-dropdown">
+								<select name="size" class="ba-select">
+										<option value="" selected disabled>Size</option>
+										<option value="8">8</option>
+				  						<option value="9">9</option>
+				  						<option value="10">10</option>
+				  						<option value="12">12</option>
+								</select>
+								<select name="qty" class="ba-select">
+										<option value="" selected disabled>Qty<i class="fa fa-chevron-down" aria-hidden="true"></i></option>
+										<option value="1">1</option>
+				  						<option value="2">2</option>
+				  						<option value="3">3</option>
+				  						<option value="4">4</option>
+								</select>
+							</div>
+							<button class="ba-add" type="submit">
+								Add to card
+							</button>
+						</form>
+				</div>
+			</section>
+	</main>
+</body>
+</html>
